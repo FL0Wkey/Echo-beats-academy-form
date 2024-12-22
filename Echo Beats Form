@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo Beats Academy Admission Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .header p {
+            margin: 0;
+            font-size: 14px;
+            color: #666;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .info {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="/mnt/data/WhatsApp%20Image%202024-12-22%20at%2021.30.51_ab83c1b4.jpg" alt="Echo Beats Academy Logo">
+            <h1>Echo Beats Academy</h1>
+            <p>Your Path to Musical Excellence</p>
+        </div>
+
+        <form action="/submit" method="POST">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="instrument">Instrument of Interest</label>
+            <select id="instrument" name="instrument" required>
+                <option value="guitar">Guitar</option>
+                <option value="piano">Piano</option>
+                <option value="vocals">Vocals</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="availability">Preferred Time for Classes</label>
+            <select id="availability" name="availability" required>
+                <option value="morning">Morning</option>
+                <option value="afternoon">Afternoon</option>
+                <option value="evening">Evening</option>
+            </select>
+
+            <p class="info">
+                Admission Fee: NRs 1000<br>
+                Monthly Fee: NRs 3000<br>
+                Discount: NRs 500 each for admission when two people join together.
+            </p>
+
+            <button type="submit">Submit Application</button>
+        </form>
+
+        <div class="info">
+            <p>For more information, contact us:</p>
+            <p>Email: <a href="mailto:joey202226jordison@gmail.com">joey202226jordison@gmail.com</a></p>
+            <p>Phone: +977 9826071557</p>
+        </div>
+    </div>
+</body>
+</html>
